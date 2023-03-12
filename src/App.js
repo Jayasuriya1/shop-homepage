@@ -117,7 +117,7 @@ function NavBar(props) {
           </Nav>
         </Navbar.Collapse>
         <Badge bg="warning" text="dark">
-          🛒{props.counter} Card 
+          🛒{props.counter} Cart 
         </Badge>
       </Container>
     </Navbar>
@@ -155,7 +155,7 @@ function Cards({ data, idx, counter, setCounter }) {
         <Card.Text>Rating: {data.rating}</Card.Text>
         {show ? (
           <Button onClick={addToCard} variant="primary">
-            Add Card
+            Add Cart
           </Button>
         ) : (
           ""
@@ -163,7 +163,7 @@ function Cards({ data, idx, counter, setCounter }) {
 
         {!show ? (
           <Button onClick={removeFromCard} variant="danger">
-            Remove Card
+            Remove Cart
           </Button>
         ) : (
           ""
